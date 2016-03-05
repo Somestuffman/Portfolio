@@ -1,0 +1,42 @@
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link type="text/css" href="init.css" rel="stylesheet">
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+</head>
+
+<div class="intro">
+  <p class="typing-text"> > Welcome to my portfolio page<span class="blink">_</span></p>
+</div>
+
+<div class="about-me" id="about-me">
+  <p class="typing-text" id="first"> > Hello, world! I'm Somestuffman</p> 
+  <p class="typing-text" id="second"> > I am a biginner in web programming </p>
+  <p class="typing-text" id="third"> > I'll put here my stuff...</p>
+</div>
+
+<div class="button-container">
+ <a href="https://github.com/Somestuffman" target="blank"> <button class="stuff"><i class="fa fa-github-square"> GitHub</i></button></a>
+</div>
+
+<script>
+
+jQuery(function(f){
+	var element = f('#first');
+    f(window).scroll(function(){
+        element['fade'+ (f(this).scrollTop() > 40 ? 'In': 'Out')](500);
+        document.getElementById('about-me').style.color = 'green';
+    });
+});
+jQuery(function(f){
+	var element = f('#second');
+    f(window).scroll(function(){
+        element['fade'+ (f(this).scrollTop() > 80 ? 'In': 'Out')](500);
+    });
+});
+jQuery(function(f){
+    var element = f('#third');
+    f(window).scroll(function(){
+        element['fade'+ (f(this).scrollTop() > 140 ? 'In': 'Out')](500);
+    });
+})
+</script>

@@ -1,0 +1,65 @@
+body{
+  background-color: black;
+  min-height: 1000px;
+}
+
+.intro{
+  height: 200px;
+  background-color: #000;
+  color: green;
+  font-size: 56px;
+  padding-top: 64px;
+  padding-left: 2%;
+}
+
+.blink{
+	 animation: blink 1s linear infinite;
+}
+
+.typing-text{
+    width: 30em;
+    font-family: Courier;
+    white-space:nowrap;
+    overflow:hidden;
+    animation: type 6s steps(50, end);
+}
+
+@keyframes type{
+    from { width: 0; }
+}
+
+@keyframes blink {
+	0% { opacity: 1; }
+	50% { opacity: 1; }
+	51% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+.about-me{
+  height: 400px;
+  background-color: #000; 
+  color: black;
+  font-size: 24px;
+  padding-left: 5%;
+}
+
+p{
+  padding-bottom: 40px;
+}
+
+.button-container{
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stuff{
+  font-size: 20px;
+  border-radius: 7px;
+  color: white;
+  background-color: black;
+  border-color: white;
+  padding: 5px 30px;
+  border-width: 3px;
+}
